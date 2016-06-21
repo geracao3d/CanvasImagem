@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body onload=myCanvas()>
+<style>
+img.hidden {
+    visibility: hidden;
+}
+</style>
+<canvas id="myCanvas" width="450" height="600"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<img class="hidden" id="scream0" src="Pinguins.jpg" alt="The Scream">
+    <img class="hidden" id="scream1" src="Coala.jpg" alt="The Scream">
+
+    <img class="hidden" id="scream2" src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=http://codigofonte.uol.com.br" alt="The Scream">
+
+
+<p>Canvas to fill:</p>
+
+
+
+<p><button onclick="myCanvas()">Try it</button></p>
+
+<script>
+function myCanvas() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var img0 = document.getElementById("scream0");
+    ctx.drawImage(img0,150,200);
+    var img1 = document.getElementById("scream1");
+    ctx.drawImage(img1,10,10);
+    var img2 = document.getElementById("scream2");
+    ctx.drawImage(img2,30,200);
+}
+</script>
+
+    
+  
+</body>
+</html>
