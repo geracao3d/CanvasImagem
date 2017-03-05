@@ -4,6 +4,6 @@ function bla(){
 
 }
 
-function blabla(){
-
+function blabla($min=0){
+return false
 }
