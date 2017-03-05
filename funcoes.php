@@ -4,6 +4,7 @@ function bla(){
 
 }
 
-function blabla(){
-
+function blabla(id){
+  return id
+  
 }
