@@ -4,6 +4,8 @@ function bla(){
 
 }
 
-function blabla($min=0){
-return false
+
+function blabla(id){
+  return id
+
 }
